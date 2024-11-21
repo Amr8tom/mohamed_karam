@@ -43,17 +43,15 @@
       z-index: 1;
     }
     a {
-  color: #ffd700; /* Golden yellow */
-  text-decoration: none; /* Removes underline */
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #ffc107; /* Slightly brighter yellow for hover effect */
-  text-decoration: underline; /* Adds underline on hover for emphasis */
-}
-
+      color: #ffd700; /* Golden yellow */
+      text-decoration: none; /* Removes underline */
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #ffc107; /* Slightly brighter yellow for hover effect */
+      text-decoration: underline; /* Adds underline on hover for emphasis */
+    }
     .small-image {
       position: absolute;
       top: 50%;
@@ -65,6 +63,12 @@ a:hover {
       border: 3px solid #ffd700;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
       background: #fff;
+    }
+    /* Hide small image on mobile devices */
+    @media (max-width: 768px) {
+      .small-image {
+        display: none;
+      }
     }
     .navbar {
       background: #444;
@@ -88,10 +92,10 @@ a:hover {
       -webkit-text-fill-color: transparent;
     }
     .services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
-  gap: 20px; /* Spacing between items */
-}
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+      gap: 20px; /* Spacing between items */
+    }
     .service-item {
       background: #333;
       border-top: 4px solid #ffd700;
@@ -143,7 +147,7 @@ a:hover {
 
 <header>
   <h1>المستشار محمد كرم للمحاماة </h1>
-  <h1> والاستشارات القانونية</h1>
+  <h1>والاستشارات القانونية</h1>
   <img src="profile.jpg" alt="صورة المستشار محمد كرم" class="small-image">
 </header>
 
@@ -217,7 +221,7 @@ a:hover {
 <section id="contact" class="contact">
   <div class="container text-center">
     <h2>تواصل معنا</h2>
-    <p><strong>الهاتف:           </strong> <a href="01285458394"> 01285458394   </a> </p>
+    <p><strong>الهاتف:           </strong> <a href="tel:+201285458394"> 01285458394   </a> </p>
     <p><strong>البريد الإلكتروني:</strong> <a href="mailto:karam653@gmail.com">karam653@gmail.com</a></p>
     <p><strong>فيسبوك:</strong> <a href="https://www.facebook.com/mohamedkaramlawyer" target="_blank">www.facebook.com/mohamedkaramlawyer</a></p>
     <a href="https://wa.me/201285458394" target="_blank" class="btn-whatsapp">تواصل عبر واتساب</a>
