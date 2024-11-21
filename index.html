@@ -93,8 +93,20 @@
     }
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
-      gap: 20px; /* Spacing between items */
+      grid-template-columns: repeat(3, 1fr); /* Default: 3 services per row */
+      gap: 20px; /* Spacing between services */
+    }
+    /* Adjust layout for tablets (screen width ≤ 768px) */
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 services per row */
+      }
+    }
+    /* Adjust layout for phones (screen width ≤ 576px) */
+    @media (max-width: 576px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 services per row */
+      }
     }
     .service-item {
       background: #333;
