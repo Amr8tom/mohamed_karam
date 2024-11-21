@@ -29,13 +29,22 @@
       background: rgba(0, 0, 0, 0.6);
     }
     header h1 {
-      position: relative;
-      font-size: 4rem;
-      background: linear-gradient(to right, #ffd700, #ffc107, #ffa500);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      z-index: 1;
-    }
+  position: relative;
+  font-size: 3rem; /* Default font size for desktops and tablets */
+  background: linear-gradient(to right, #ffd700, #ffc107, #ffa500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
+/* Make the header font size smaller on phone screens (width ≤ 576px) */
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 2rem; /* Reduced font size for phones */
+  }
+}
+
+    
     header p {
       position: relative;
       font-size: 2rem;
